@@ -16,5 +16,5 @@ To anyone coming here to **clone this bot**, no support will be given for it. If
 * Frequently updated
 * Nao respects your data privacy, we constantly improving privacy and security in Nao
 
-* Bot Link:  <a href="https://t.me/NaoTomoriRobot" alt="NaoTomoriRobot"> </a>
-* News channel: <a  href="https://t.me/BotLabUpdates" alt="Bot Lab Updates"> </a>
+[Bot Demo](https://t.me/NaoTomoriRobot)
+[Updates Channel](https://t.me/BotLabUpdates)
