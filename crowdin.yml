@@ -1,0 +1,3 @@
+files:
+  - source: texas/localization/en.yaml
+    translation: /**/texas/localization/%locale_with_underscore%.yaml
