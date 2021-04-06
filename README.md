@@ -15,3 +15,6 @@ To anyone coming here to **clone this bot**, no support will be given for it. If
 * Fully open-source
 * Frequently updated
 * Nao respects your data privacy, we constantly improving privacy and security in Nao
+
+* Bot Link:  <a href="https://t.me/NaoTomoriRobot" alt="NaoTomoriRobot"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-SaitamaRobot-blue" /> </a>
+* News channel: <a  href="https://t.me/BotLabUpdates" alt="Bot Lab Updates"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-One%20Punch%20Updates-9cf" /> </a>
