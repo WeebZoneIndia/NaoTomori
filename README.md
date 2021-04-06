@@ -1,3 +1,5 @@
+![Nao Tomori](https://telegra.ph/file/ac398a8201f32acd79b82.jpg)
+
 # Nao Tomori
  
 >  Nao is a modern and fast Telegram Bot developed entirely to improve the chat experience,
