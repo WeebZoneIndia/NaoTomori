@@ -1,5 +1,4 @@
 ![Nao Tomori](https://telegra.ph/file/ac398a8201f32acd79b82.jpg)
-
 # Nao Tomori
  
 >  Nao is a modern and fast Telegram Bot developed entirely to improve the chat experience,
@@ -16,4 +15,3 @@ To anyone coming here to **clone this bot**, no support will be given for it. If
 * Fully open-source
 * Frequently updated
 * Nao respects your data privacy, we constantly improving privacy and security in Nao
-
