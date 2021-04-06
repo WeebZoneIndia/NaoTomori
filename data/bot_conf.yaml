@@ -1,0 +1,30 @@
+# Texas example config
+
+# Basic
+TOKEN: "Your Bot token"
+
+# Get they in https://my.telegram.org/
+APP_ID: 1234
+APP_HASH: "Your App Hash"
+
+MONGODB_URI': "localhost"
+MONGO_PORT: 27017
+MONGO_DB': 'Nao'
+
+API_PORT': 8080
+REDIS_URI: "localhost"
+REDIS_PORT: 6379
+REDIS_PASS: "hmm"
+REDIS_DB_FSM: 1
+
+OWNER_ID: 885190545
+OPERATORS: [885190545, 00000000]
+
+# Advanced
+SW_API: "Your Spam Watch API here"
+
+DEBUG_MODE: False
+LOAD_MODULES: True
+
+ALLOW_FORWARDS_COMMANDS: True
+ALLOW_COMMANDS_WITH_!: True
