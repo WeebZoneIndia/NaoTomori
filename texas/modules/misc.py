@@ -286,11 +286,12 @@ __help__ = """
 An "odds and ends" module for small, simple commands which don't really fit anywhere.
 
 <b>Available commands:</b>
-- /direct (url): Generates direct links from the sourceforge.net
 - /github (username): Returns info about a GitHub user or organization.
-- /ip (url): Displays information about an IP / domain.
+- /direct (url): Generates direct links from the sourceforge.net
+- /cancel: Disables current state. Can help in cases if Nao not responing on your message.
+- /json: Get Detailed info about any message Syntax.
 - /wiki (keywords): Get wikipedia articles just using this bot.
-- /cancel: Disables current state. Can help in cases if Texas not responing on your message.
-- /id: get the current group id. If used by replying to a message, gets that user's id.
 - /info: get information about a user.
+- /ip (url): Displays information about an IP / domain.
+- /id: get the current group id. If used by replying to a message, gets that user's id.
 """

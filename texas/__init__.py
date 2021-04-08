@@ -26,7 +26,7 @@ from texas.utils.logger import log
 from texas.versions import TEXAS_VERSION
 
 log.info("----------------------")
-log.info("|      Texas      |")
+log.info("|      Nao      |")
 log.info("----------------------")
 log.info("Version: " + TEXAS_VERSION)
 
