@@ -61,7 +61,7 @@ async def get_start_func(message, strings, edit=False):
     buttons.add(InlineKeyboardButton(strings['btn_help'], callback_data='get_help'),
                 InlineKeyboardButton(strings['btn_lang'], callback_data='lang_btn'))
     buttons.add(InlineKeyboardButton(strings['btn_chat'], url='https://t.me/BotLabTeam'),
-                InlineKeyboardButton(strings['btn_channel'], url='https://t.me/BotLabUpdates'))
+                InlineKeyboardButton(strings['btn_channel'], url='https://t.me/NaoUpdates'))
     buttons.add(InlineKeyboardButton(strings['btn_add'], url=f'https://telegram.me/NaoTomoriRobot?startgroup=true'))
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):

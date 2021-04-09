@@ -34,4 +34,3 @@ lxml
 spamwatch
 httpx[http2]
 wikipedia
-dateparser

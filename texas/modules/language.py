@@ -59,8 +59,8 @@ async def select_lang_keyboard(message, strings, edit=False):
             callback_data=select_lang_cb.new(lang=lang_info['code'], back_btn=False if edit is False else True))
         )
 
-    # markup.add(InlineKeyboardButton(
-        # strings['crowdin_btn'], url='https://crowdin.com/project/texas'))
+    markup.add(InlineKeyboardButton(
+        strings['crowdin_btn'], url='https://crowdin.com/project/nao-tomori/'))
     if edit:
         markup.add(InlineKeyboardButton(
             strings['back'], callback_data='go_to_start'))

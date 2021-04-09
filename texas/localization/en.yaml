@@ -137,7 +137,7 @@ STRINGS:
     # /delwarns
     purged_warns: "{admin} reset <code>{num}</code> warns of {user} in <b>{chat_title}</b>!"
     usr_no_wrn: "{user} doesn't have any warns to reset."
-    rst_wrn_sofi: 'Texas never had warns to reset.'
+    rst_wrn_sofi: 'Nao never had warns to reset.'
     not_digit: Warnlimits should be digits!
 
     # /warnmode
@@ -168,7 +168,9 @@ STRINGS:
     conn_chat_id: "Current connected chat ID: <code>{id}</code>"
     help_btn: "Click me for help!"
     help_txt: "Click the button below for help!"
-
+    
+    github_err: "User not found. Make sure you entered valid username!"
+    
     delmsg_filter_title: 'Delete the message'
     send_text: Please send the reply message!
     replymsg_filter_title: 'Reply to message'
@@ -193,11 +195,11 @@ STRINGS:
     start_hi: "Hey there! My name is <b>Nao Tomori.</b>\nI can help manage your groups with useful features, feel free to add me to your groups!"
     btn_help: "❔ Help"
     btn_add: "➕ Add Nao to your group"
-    btn_lang: "🇷🇺 Language"
+    btn_lang: "🌐 Languages"
     btn_chat: "👥 Support Chat"
     btn_channel: "📡 Updates Channel"
     btn_group_help: "Click me for help!"
-    back: Back
+    back: 🔙 Back
 
     # /help
     help_header: "Hey! My name is <b>Nao Tomori</b>. I am a group management bot, here to help you get around and keep the order in your groups!\nI have lots of handy features, such as flood control, a warning system, a note keeping system, and even predetermined replies on certain keywords."
