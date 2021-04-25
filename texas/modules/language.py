@@ -134,14 +134,3 @@ async def __import__(chat_id, data):
 
 
 __mod_name__ = "Languages"
-
-__help__ = """
-This module is dedicated towards utlising Nao's localization feature! You can also <a href='https://crowdin.com/project/texas'>contribute</a> for improving localization in Texas!
-
-<b>Available commands:</b>
-- /lang: Shows a list of avaible languages
-- /lang (language codename): Sets a language
-
-<b>Example:</b> <code>/lang</code>
-Nao will send you bunch of inline buttons where you can select your prefered language interatively without any hassles!
-"""

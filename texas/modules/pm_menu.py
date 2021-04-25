@@ -59,10 +59,9 @@ async def get_start_func(message, strings, edit=False):
     task = msg.edit_text if edit else msg.reply
     buttons = InlineKeyboardMarkup()
     buttons.add(InlineKeyboardButton(strings['btn_help'], callback_data='get_help'),
-                InlineKeyboardButton(strings['btn_lang'], callback_data='lang_btn'))
-    buttons.add(InlineKeyboardButton(strings['btn_chat'], url='https://t.me/BotLabTeam'),
                 InlineKeyboardButton(strings['btn_channel'], url='https://t.me/NaoUpdates'))
-    buttons.add(InlineKeyboardButton(strings['btn_add'], url=f'https://telegram.me/NaoTomoriRobot?startgroup=true'))
+    buttons.add(InlineKeyboardButton(strings['btn_chat'], url='https://t.me/BotLabTeam'),
+                InlineKeyboardButton(strings['btn_add'], url=f'https://telegram.me/NaoTomoriRobot?startgroup=true'))
     # Handle error when user click the button 2 or more times simultaneously
     with suppress(MessageNotModified):
         await task(strings['start_hi'], reply_markup=buttons)
@@ -76,11 +75,6 @@ async def help_cb(event, strings):
         strings['back'], callback_data='go_to_start'))
     with suppress(MessageNotModified):
         await event.message.edit_text(strings['help_header'], reply_markup=button)
-
-
-@register(regexp='lang_btn', f='cb')
-async def set_lang_cb(event):
-    await select_lang_keyboard(event.message, edit=True)
 
 
 @register(regexp='go_to_start', f='cb')

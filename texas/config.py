@@ -35,6 +35,8 @@ DEFAULTS = {
 
     'API_PORT': 8080,
 
+    'HEROKU': False,
+
     'JOIN_CONFIRM_DURATION': '30m',
 }
 
