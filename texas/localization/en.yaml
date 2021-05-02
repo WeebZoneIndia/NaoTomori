@@ -171,6 +171,10 @@ STRINGS:
     
     github_err: "User not found. Make sure you entered valid username!"
     
+    paste_success: "<b>Pasted successfully!</b>\nNekobin URL: {}"
+    paste_fail: "Failed to reach Nekobin!"
+    paste_no_text: "You haven't supplied text to paste!"
+
     delmsg_filter_title: 'Delete the message'
     send_text: Please send the reply message!
     replymsg_filter_title: 'Reply to message'
@@ -513,7 +517,7 @@ STRINGS:
     # is chat creator
     unable_identify_creator: "Unable to identify anonymous chat creator, duplicate signature (titles) found!"
   owner_stuff:
-    father: "\nHe is my creator."
+    father: "\nHe is my creator.\n"
     sudo_crown: "\nHey! Look, that user has a crown, let me see it... Wow, it has an engraving - <b>'sudo user'</b>!"
   stickers:
     rpl_to_sticker: "Reply to a sticker!"
@@ -527,13 +531,13 @@ STRINGS:
     pinned_success: "Successfully pinned!"
     unpin_success: "Successfully unpinned!"
   users:
-    user_info: "<b>User info:</b>\n"
-    info_id: "ID: <code>{id}</code>"
-    info_first: "\nFirst name: {first_name}"
-    info_last: "\nLast name: {last_name}"
-    info_username: "\nUsername: {username}"
-    info_link: "\nUser link: {user_link}"
-    info_saw: "\nI saw them in <code>{num}</code> groups"
+    user_info: "<b>╒═══「 User info: 」</b>\n"
+    info_id: "• ID: <code>{id}</code>"
+    info_first: "\n• First name: {first_name}"
+    info_last: "\n• Last name: {last_name}"
+    info_username: "\n• Username: {username}"
+    info_link: "\n• User link: {user_link}"
+    info_saw: "\n╘══「 <b>Groups count:</b> <code>{num}</code> 」"
     info_sw_ban: "\nThis user is banned in @SpamWatch!"
     info_sw_ban_reason: "\nReason: <code>{sw_reason}</code>"
     info_fbanned: "\nBanned in current Federation: "
@@ -764,3 +768,8 @@ STRINGS:
     # /setfloodaction
     invalid_args: "Unsupported action, expected {supported_actions}!"
     setfloodaction_success: "Successfully updated flood action to <b>{action}</b>!"
+    
+  afk:
+    is_afk: "{user} is AFK!\nReason: {reason}"
+    unafk: "{user} is not AFK anymore!"
+    afk_anon: "AFK mode cannot be used as an anonymous administrator."

@@ -92,8 +92,38 @@ Variables are special words which will be replaced by actual info
 <code>{chatnick}</code>: Chat username
     """
     )
+    
 
+@register(cmds='paste')
+@disableable_dec('paste')
+@get_strings_dec('misc')
+async def paste_neko(message, strings, **kwargs):
+    data = None
 
+    if 'reply_to_message' in message:
+        data = message.reply_to_message.text
+    else:
+        data = get_args_str(message)
+
+    if not data:
+        await message.reply(strings["paste_no_text"])
+        return
+
+    url = "https://nekobin.com/api/documents"
+    resp = await http.post(url, data={'content': data})
+
+    if resp.status_code == 201:
+        response = resp.json()
+        key = response['result']['key']
+        paste_url = f"https://nekobin.com/{key}"
+
+        text = (strings["paste_success"].format(paste_url))
+    else:
+        text = (strings["paste_fail"])
+
+    await message.reply(text, disable_web_page_preview=True)
+    
+    
 @register(cmds='wiki')
 @disableable_dec('wiki')
 async def wiki(message):
@@ -286,12 +316,14 @@ __help__ = """
 An "odds and ends" module for small, simple commands which don't really fit anywhere.
 
 <b>Available commands:</b>
-- /github (username): Returns info about a GitHub user or organization.
 - /direct (url): Generates direct links from the sourceforge.net
+- /github (username): Returns info about a GitHub user or organization.
 - /cancel: Disables current state. Can help in cases if Nao not responing on your message.
 - /json: Get Detailed info about any message Syntax.
 - /wiki (keywords): Get wikipedia articles just using this bot.
-- /info: get information about a user.
-- /ip (url): Displays information about an IP / domain.
 - /id: get the current group id. If used by replying to a message, gets that user's id.
+- /ip (url): Displays information about an IP / domain.
+- /info: get information about a user.
+- /afk (reason): Mark yourself as AFK. When marked as AFK, any mentions will be replied to with a message stating that you're not available!
+- /paste (text) or reply: Paste a text into <code>nekobin.com</code>.
 """

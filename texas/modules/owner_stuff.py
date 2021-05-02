@@ -196,27 +196,27 @@ async def stats(message):
 async def __stats__():
     text = ""
     if os.getenv('WEBHOOKS', False):
-        text += f"* Webhooks mode, listen port: <code>{os.getenv('WEBHOOKS_PORT', 8080)}</code>\n"
+        text += f" Webhooks mode, listen port: <code>{os.getenv('WEBHOOKS_PORT', 8080)}</code>\n"
     else:
-        text += "* Long-polling mode\n"
-    text += "* Database structure version <code>{}</code>\n".format(
+        text += "• Long-polling mode\n"
+    text += "• Database structure version <code>{}</code>\n".format(
         (await db.db_structure.find_one({}))['db_ver']
     )
     local_db = await db.command("dbstats")
     if 'fsTotalSize' in local_db:
-        text += '* Database size is <code>{}</code>, free <code>{}</code>\n'.format(
+        text += '• Database size is <code>{}</code>, free <code>{}</code>\n'.format(
             convert_size(local_db['dataSize']),
             convert_size(local_db['fsTotalSize'] - local_db['fsUsedSize'])
         )
     else:
-        text += '* Database size is <code>{}</code>, free <code>{}</code>\n'.format(
+        text += '• Database size is <code>{}</code>, free <code>{}</code>\n'.format(
             convert_size(local_db['storageSize']),
             convert_size(536870912 - local_db['storageSize'])
         )
 
-    text += "* <code>{}</code> total keys in Redis database\n".format(
+    text += "• <code>{}</code> total keys in Redis database\n".format(
         len(redis.keys()))
-    text += "* <code>{}</code> total commands registred, in <code>{}</code> modules\n".format(
+    text += "• <code>{}</code> total commands registred, in <code>{}</code> modules\n".format(
         len(REGISTRED_COMMANDS), len(LOADED_MODULES))
     return text
 
