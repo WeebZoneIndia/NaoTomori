@@ -25,12 +25,13 @@ python-rapidjson
 PyYAML>5.0
 coloredlogs
 loguru
+sentry_sdk
 babel
 captcha
 async-timeout
 regex
 bs4
 lxml
-spamwatch
 httpx[http2]
-wikipedia
+python-anilist
+markdown
