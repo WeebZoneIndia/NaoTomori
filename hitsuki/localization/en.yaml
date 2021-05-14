@@ -199,7 +199,8 @@ STRINGS:
     btn_add: "➕ Add Me"
     btn_lang: "🌐 Languages"
     btn_chat: "🚑 Support"
-    btn_channel: "⛵️ Updates"
+    btn_channel: "📬 Updates"
+    btn_source: "📦 Source"
     btn_group_help: "Click me for help!"
     back: 🔙
     help_for: "Help for <b>{mod_name}</b> module:\n"
